@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    background-color: rgb(25, 24, 23);
+    height: 2500px;
+    overflow-x: hidden;
+}
+header,nav{
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+header{
+    background-color:aliceblue;
+    height: 500px;
+}
+h1{
+    width: 300px;
+    border-radius: 30px;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #fbcc01; 
+    text-shadow: 4px 1px 4px #000000;
+    position: relative;
+    top: 3%;
+    left: 2%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 2;
+    background:rgba(1,1,1,0.5);
+    box-shadow: 0px 6px 30px 7px #000000;
+}
+.con{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.slika{
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(5px 5px 5px #000000);
+}
+.balkan{
+    position: relative;
+    top: 7%;
+    right: 6%;
+}
+
+.naslov{
+    background-color: aliceblue;
+}
+
+.link,.link1{
+    margin: 0 10px;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#515151;
+}
+.link1{
+    background-color: #000000;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight:bold;
+    color: #fbcc01;
+}
+
+.img1,.img2,.img3{
+    margin: 10% 0;
+    padding: 0;
+}
+
+#mini{
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+}
+
+.dizi{
+    position: relative;
+    bottom: 20%;
+}
+
+#dim1{
+    width: 500px;
+    z-index: 0;
+    top: 66.7px;
+    right: 66.7px;
+}
+#dim2{
+    width: 250px; 
+    bottom: 100px;
+    right: 30px;
+    z-index: 1;
+}
+#dim3{
+    z-index: 0;
+    width: 350px; 
+    right: -133.33px;
+    bottom: 100px;
+}
+
+.slike{
+    background-color: rgb(25, 24, 23);
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+}
+nav,.slike{
+    display: flex;
+}
+
+
+.link:hover{
+    background-color: rgba(202, 216, 222,0.5);
+}
+.link1:hover{
+    background-color: #fbcc01;
+}
+.link1:hover .dizi{
+    color: #000000;
+}
+
+
+#scrollbar6::-webkit-scrollbar {
+    width: 12px;
+}
+
+#scrollbar6::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #95a5a6;
+    border: 1px solid #cacaca;
+}
+
+#scrollbar6::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #2c3e50;
+}
