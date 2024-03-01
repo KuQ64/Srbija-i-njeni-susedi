@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(25, 24, 23);
+    background-color: rgb(25, 24, 23); 
     height: 2500px;
     overflow-x: hidden;
 }
@@ -10,31 +10,31 @@ header,nav{
     font-size: 10px;
 }
 header{
-    background-color:aliceblue;
+    background-image:url(/images/pozadina.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
     height: 500px;
+    min-width: 700px;
 }
+
 h1{
     width: 300px;
-    border-radius: 30px;
-    font-size: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: clamp(50px,70px,90px);
     font-weight: bolder;
     color: #fbcc01; 
     text-shadow: 4px 1px 4px #000000;
     position: relative;
-    top: 3%;
-    left: 2%;
+    top: 30px;
+    left: 10%;
 }
 nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     z-index: 2;
-    background:rgba(1,1,1,0.5);
+    background:rgba(1,1,1,0.3);
     box-shadow: 0px 6px 30px 7px #000000;
 }
 .con{
@@ -46,11 +46,13 @@ nav{
     width: 300px;
     height: 300px;
     filter: drop-shadow(5px 5px 5px #000000);
+    min-width: 250px;
+    min-height: 250px;
 }
 .balkan{
     position: relative;
     top: 7%;
-    right: 6%;
+    right: 1%;
 }
 
 .naslov{
@@ -62,7 +64,14 @@ nav{
     transition: 0.5s;
     padding: 10px;
     border-radius: 10px;
-    background-color:#515151;
+    border-bottom: 1px solid #fbcc01;
+}
+.spustaj{
+    position: relative;
+    top: 20%;
+}
+.link{
+    background-color:#3f3f3f;
 }
 .link1{
     background-color: #000000;
@@ -130,6 +139,12 @@ nav,.slike{
 }
 .link1:hover .dizi{
     color: #000000;
+}
+.link:hover .spustaj{
+    color: #515151;
+}
+.link:hover{
+    background-color: #fbcc01;
 }
 
 
