@@ -194,3 +194,37 @@ a{
     background-image: url(/images/montenego/mn1.jpg);
     background-size: cover;
 }
+
+
+/* VUJIC */
+
+.kontejner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kontejner-slike{
+    position: relative;
+    margin-bottom: 20px;
+}
+.hover-slike{
+    width: 200px;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+}
+.overlay p{
+    color: #fff;
+    font-size: 14px;
+}
+.kontejner-slike:hover .overlay{
+    left:calc(100%+10px);
+}
