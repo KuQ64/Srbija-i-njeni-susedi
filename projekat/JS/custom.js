@@ -35,3 +35,16 @@ function scrollFunction() {
     document.getElementById("nav").style.backgroundColor = "rgba(1,1,1,0)";
   }
 }
+
+
+/* VUJIC */
+function showOverlay()
+{
+  var overlay = document.querySelector('.overlay');
+  overlay.style.left = '100%';
+}
+function hideOverlay()
+{
+  var overlay = document.querySelector('overlay');
+  overlay.style.left = '110%';
+}
