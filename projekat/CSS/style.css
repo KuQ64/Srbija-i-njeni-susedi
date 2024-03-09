@@ -165,7 +165,6 @@ a{
 }
 .card:hover{
     animation: pickme 0.5s ease normal forwards;
-    filter: saturate(0%);
 }
 .sr1:hover{
     animation: pickme1 0.5s ease normal forwards;
