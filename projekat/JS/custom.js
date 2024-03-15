@@ -52,4 +52,3 @@ function hideOverlay1()
 {
   document.getElementById("about2").style.opacity = "0";
 }
-
