@@ -111,9 +111,12 @@ a{
 
 .link1:hover{
     background-color: #fbcc01;
+    animation: jello1 0.7s ease normal forwards;
+
 }
 .link:hover{
     background-color: #fbcc01;
+    animation: jello1 0.7s ease normal forwards;
 }
 .link1:hover .dizi{
     color: #000000;
@@ -136,6 +139,7 @@ a{
     height: 5vw;
     position: relative;
     top: 3%;
+    border-radius: 10px;
 }
 
 
@@ -159,30 +163,53 @@ a{
 .card{
     height: 30vw;
     width: 30vw;
-    margin:2.75% 2.75% 2.75% 2.75%;
+    margin:2.75%;
     border-bottom: #fbcc01;
-    border-radius: 10%;
+    border-radius: 100%;
+    transition: 0.5s ease-in;
 }
 .card:hover{
-    animation: pickme 0.5s ease normal forwards;
+    transform: translateY(-20px) rotate(3deg);
+    border-radius: 10%;
+}
+.card:hover .zastava{
+    animation: jello 1s ease normal forwards;
+}
+.card:hover .crno{
+    border-radius: 0px 0px 10px 10px;
+    top: 75%;
+    transition-delay: 0.5s;
+}
+
+.sr1:hover .crno1{
+   border-radius: 0 0 15px 15px;
+   top: 75%;
+}
+.sr1:hover .zastava{
+    animation: jello 1s ease normal forwards;
+}
+.sr1:hover h2{
+    animation: jello 1s ease normal forwards;
+}
+.card:hover h2{
+    animation: jello 1s ease normal forwards;
 }
 .sr1:hover{
-    animation: pickme1 0.5s ease normal forwards;
+    transform: translateY(-20px) rotate(3deg);
+    border-radius: 20px;
 }
 
 .crno{
-    border-radius: 0 0 40px 40px;
+    border-radius: 11px 11px 20px 20px;
 }
 .crno,.crno1{
     height: 25%;
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     position: relative;
-    top: 75%;
+    top: 40%;
     gap: 30px;
-}
-.crno1{
-    border-radius: 0 0 15px 15px;
+    transition: 0.5s;
 }
 
 
@@ -198,7 +225,8 @@ a{
     font-size: 50px;
     margin-bottom: 2.75%;
     filter:  drop-shadow(13px 13px 7px #000000);
-    border-radius: 20px;
+    border-radius: 200px;
+    transition: 0.5s;
 }
 .srtxt{
     position: relative;
@@ -265,18 +293,34 @@ h2{
 		transform: translateY(-30px) rotate(6deg);
 	}
 }
-@keyframes pickme1 {
 
-	0% {
-		transform: translateY(0) rotate(0);
+@keyframes kolo {
+	0%,
+	100% {
+		transform: translateX(0%);
 		transform-origin: 50% 50%;
 	}
 
-	100% {
-		transform: translateY(-20px) rotate(3deg);
+	15% {
+		transform: translateX(-30px) rotate(-10deg);
+	}
+
+	30% {
+		transform: translateX(30px) rotate(10deg);
+	}
+
+	45% {
+		transform: translateX(-30px) rotate(-10deg);
+	}
+
+	60% {
+		transform: translateX(30px) rotate(10deg);
+	}
+
+	75% {
+		transform: translateX(-30px) rotate(-10deg);
 	}
 }
-
 /*------------------About------------------*/
 #abt{
     margin-top: 10%;
@@ -287,7 +331,6 @@ h2{
 .kontejner-slike{
     position: relative;
     margin-bottom: 20px;
-    position: relative;
 }
 .hover-slike{
     width: 200px;
@@ -346,14 +389,14 @@ h2{
 .animacija {
     margin-top: 5%;
     background:#d1d1cd;
+    padding: 10px;
 }
 .animacija1,.animacija2,.animacija {
     display: flex;
     width: 350%;
-    animation: anim 70s linear infinite;
+    animation: anim 25s linear infinite;
     border: 5px solid black;
     overflow: hidden;
-    padding: 10px;
 }
 .animacija1,.animacija2{
     background: rgb(0, 0, 0);
@@ -362,9 +405,10 @@ h2{
     margin-top: 5%;
 }
 .zastave{
-    height: 60px;
+    height: 100px;
     width: 100px;
-    margin: 0 70px;
+    margin: 0 -15px;
+    animation: kolo 1.5s infinite;
 }
 ul {
     display: flex;
@@ -379,34 +423,229 @@ footer{
     width: 100%;
 }
 
+
 @keyframes anim {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(-10%);
     }
     25%{
         transform: translateX(0);
     }
     50% {
-        transform: translateX(-50%);
+        transform: translateX(-10%);
     }
     75%{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-50%);
+        transform: translateX(-10%);
     }
 }
-  
+@keyframes jello {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes jello1 {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+/*---------Sound--------*/
+embed{
+    padding: 0px 5px 5px 5px;
+    background-color: #000000;
+    border-radius: 100px;
+    position:absolute;
+    right: 5%;
+}
+
+/*----------Chart----------*/
+.kontejner{
+    position: relative;
+    max-width: 665px;
+    width: 100%;
+    background: #000000;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.kontejner .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    animation: progress 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.html .skill-per,.html .posto,.html .posto::before{
+    background:#ee8f22;
+}
+.css .skill-per,.css .posto,.css .posto::before{
+    background:#225cee;
+}
+.javascript .skill-per,.javascript .posto,.javascript .posto::before{
+    background:#fbcc01;
+}
+.bootstrap .skill-per,.bootstrap .posto,.bootstrap .posto::before{
+    background:#7722ee;
+}
+
+.html .title{
+    color:#ee8f22;
+}
+.css .title{
+    color:#225cee;
+}
+.javascript .title{
+    color:#fbcc01;
+}
+.bootstrap .title{
+    color:#7722ee;
+}
+
+.skill-per.html{
+    width: 89.6%;
+    animation-delay: 0.1s;
+}
+.skill-per.css{
+    width: 44.1%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 25.8%;
+    animation-delay: 0.2s;
+}
+.skill-per.bootstrap{
+    width: 20.5%;
+    animation-delay: 0.3s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .posto{
+    position: absolute;
+    right: -27px;
+    top: -33px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding: 2px 6px;
+    border-radius: 3px;
+    z-index: 1;
+}
+.posto::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    transform: translateX(-50%) rotate(45deg);
+}
+.procenat{
+    margin-top: 5%;
+}
+#gh{
+    position: absolute;
+    right: -10%;
+    bottom: 10%;
+}
+/*------Responsive------*/
 @media only screen and (max-width: 426px) {
     .r {flex-wrap: wrap;}
     h1 { font-size: 8vw;right: 20vw;}
     .link, .link1 { font-size: 3vw;padding: 1vw;}
-    header {padding: 0;height: 15%;}
-    .u{top:5%}
+    header {padding: 0;height: 10%;}
+    .u{top:1%}
     .card{height: 300px;width: 300px;}
     .malo {width: 3vw;height: 3vw;}
     .crno{height: 10%;top: 90%;}
     .sr1{height: 300px;width: 300px;}
+    .animacija,.animacija1,.animacija2{
+        width: 99.2%;
+        animation: none;
+        border: 2px solid black;
+    }
+    .zastave{
+        width: 70px;
+        height: 70px;
+        margin: 0 -17px;
+        position: relative;
+        right: 80%;
+    }
+    h2{font-size: 30px;}
+    .zastava{width: 50px;height: 30px;}
+    .crno{padding: 10px 0;top: 50%;}
+    .card:hover .crno{
+        border-radius: 0px 0px 10px 10px;
+        top: 83.5%;
+    }
+    embed{display: none;}
+    .razmak{flex-wrap: wrap;}
+    .and{display: none;}
+    .kontejner-slike{
+        margin: 10% 0;
+    }
+    .animacija{display: none;}
+    #gh{left: 40%;width: 50px;height: 50px;}
+    .skill-per.html{
+        width: 90%;
+        animation-delay: 0.1s;
+    }
+    .skill-per.css{
+        width: 75%;
+        animation-delay: 0.1s;
+    }
+    .skill-per.javascript{
+        width: 60%;
+        animation-delay: 0.2s;
+    }
+    .skill-per.bootstrap{
+        width: 53%;
+        animation-delay: 0.3s;
+    }
 }
 @media only screen and (max-width: 321px) {
     .r {flex-wrap: wrap;}
@@ -414,9 +653,21 @@ footer{
     ::-webkit-scrollbar{width: 0;}
     .link, .link1 { font-size: 3vw;padding: 1vw 0.5vw;}
     .slika {width: 30%;}
-    header {padding: 0;height: 10%;}
-    .u{top:2%}
-    .card{height: 250px;width: 250px;}
+    header {padding: 0;height: 5%;}
+    .u{top:1%}
+    .card{height: 250px;width: 250px;margin: 5% 0;}
     .malo {width: 3vw;height: 3vw;}
     .sr1{height: 250px;width: 250px;}
+    .animacija,.animacija1,.animacija2{
+        width: 100%;
+        animation: none;
+        border: 2px solid black;
+    }
+    h2{font-size: 30px;}
+    .zastava{width: 50px;height: 30px;}
+    .crno{padding: 10px 0;top: 50%;}
+    .card:hover .crno{
+        border-radius: 0px 0px 10px 10px;
+        top: 82%;
+    }
 }
