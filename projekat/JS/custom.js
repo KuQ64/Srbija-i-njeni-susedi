@@ -36,19 +36,6 @@ function scrollFunction() {
     document.getElementById("nav").style.backgroundColor = "rgba(1,1,1,0)";
   }
 }
-/* ---------- ABOUT HOVER ---------- */
-function showOverlay() {
-  document.getElementById("about1").style.opacity = "1";
-}
-function hideOverlay() {
-  document.getElementById("about1").style.opacity = "0";
-}
-function showOverlay1() {
-  document.getElementById("about2").style.opacity = "1";
-}
-function hideOverlay1() {
-  document.getElementById("about2").style.opacity = "0";
-}
 
 /* ---------- MODALS ---------- */
 function setupModal(divId, modalId, closeClass) 
