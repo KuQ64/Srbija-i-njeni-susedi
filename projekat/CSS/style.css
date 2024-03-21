@@ -338,42 +338,57 @@ h2{
     width: 200px;
     height: 250px;
 }
+.hover-slike,.iza{
+    transition: 1s;
+}
 .slika1{
     border:5px solid #fbcc01;
 }
 .slika2{
     border:5px solid black;
 }
-.overlay{
+.boja1{
+    background-color:#fbcc01;
+    border:3px solid black;
+}
+.boja2{
+    background-color:black;
+    border:3px solid #fbcc01;
+}
+.kontejner-slike:hover .iza {
+    transform: translate(1.6rem, 1.6rem);
+}
+.kontejner-slike:hover .hover-slike{
+    transform: translate(-2rem, -2rem);
+}
+.iza{
     position: absolute;
-    top: 90%;
-    width: 209px;
-    height: 50px;
-    padding: 20px;
-    box-sizing: border-box;
-    opacity: 0;
+    top: 0;
+    width: 200px;
+    height: 250px;
     z-index: -1;
 }
-#about1{
-    background-color: #fbcc01;
-    color: #000000;
-}
-#about2{
-    background-color: rgb(0, 0, 0);
+.mala1{
     color: #fbcc01;
 }
-.kontejner-slike:hover .overlay{
-    height: 80px;
-    transition: 1s ease;
+.tekstic{
+    text-align: center;
+    top: 60%;
+}
+.tekstic,.overlay p,.velika1,.velika2{
+    position: relative;
 }
 .overlay p{
-    position: relative;
     width: 100%;
     font-size: 14px;
 }
-.velika{
+.velika1,.velika2{
     font-size: 25px;
+    top: 25px;
     font-weight: bolder;
+}
+.velika1{
+    color: #fbcc01;
 }
 .amp{
     height: 200px;
