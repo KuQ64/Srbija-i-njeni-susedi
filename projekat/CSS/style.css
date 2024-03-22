@@ -1,8 +1,10 @@
 body.home{
-    height: 4300px;
+    height: 4000px;
+    background-image: url(/images/about/p1.jpg);
 }
 body.about{
     height: 1000px;
+    background: url(/images/about/p.jpg);
 }
 body.uput{
     height: 2000px;
@@ -30,7 +32,7 @@ header{
     background-image:url(/images/home/pozadina.jpg);
     background-size: cover;
     background-repeat:no-repeat;
-    height: 20%;
+    height: 21%;
     min-width: 325px;
 }
 header,nav{
@@ -54,7 +56,11 @@ h1{
     background-color: rgba(0, 0, 0, 0.3);
     padding: 5% 0;
 }
-
+.pocrni{
+    background-color: #000000;
+    height: 30px;
+    width: 100%;
+}
 /*-------------Containter------------*/
 
 .con{
@@ -349,17 +355,23 @@ h2{
 }
 .boja1{
     background-color:#fbcc01;
-    border:3px solid black;
+    border:5px solid black;
 }
 .boja2{
     background-color:black;
-    border:3px solid #fbcc01;
+    border:5px solid #fbcc01;
 }
 .kontejner-slike:hover .iza {
-    transform: translate(1.6rem, 1.6rem);
+    transform: translate(2.3rem, 2.3rem);
 }
 .kontejner-slike:hover .hover-slike{
     transform: translate(-2rem, -2rem);
+}
+.kontejner-slike:hover .slika1 {
+    box-shadow: 2px 2px 7px 1px #fbcc01;
+}
+.kontejner-slike:hover .slika2 {
+    box-shadow: 3px 3px 7px 1px #000000;
 }
 .iza{
     position: absolute;
@@ -432,12 +444,6 @@ ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-}
-
-footer{
-    background-color: #000000;
-    height: 250px;
-    width: 100%;
 }
 
 
@@ -623,17 +629,6 @@ embed{
     background-color: rgba(0,0,0,0.4);
     overflow: hidden;
 }
-.modal-content1 {
-    background-color: #fbcc01;
-    margin: 15% auto;
-    padding: 1px;
-    border: 1px solid #888;
-    width: 60%;
-    position: absolute;
-    top: 0; 
-    left: 20%;
-    border-radius: 20px;
-}
 .close, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9, .close10, .close11 {
     color: #fbcc01;
     float: right;
@@ -651,12 +646,22 @@ embed{
     background-color: black;
     color: #fbcc01;
     font-size: 40px;
-    gap: 20px;border-radius: 20px;
+    gap: 20px;
+    border-radius: 20px;
+}
+iframe{
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    height: 50%;
+    width: 45%;
+    border: 5px solid black;
+    border-radius: 20px;
 }
   
-  /* Modal Body */
+  /*-----Modal-Body-------*/
 .modal-body {
-    padding: 2px 16px;
+    padding: 2px 16px 100px 16px;
     background-color: #fbcc01;
     color: black;
     font-size: 20px;
@@ -665,19 +670,20 @@ embed{
 .quick-info{
     font-weight: bold;
 }
-  
-  /* Modal Content */
-.modal-content {
-    position: relative;
-    padding: 0;
-    border: 1px solid #d1d1cd;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+  /*-----Modal-Content------*/
+  .modal-content1 {
+    background-color: #fbcc01;
+    margin: 15% auto;
+    padding: 1px;
+    border: 1px solid #888;
+    width: 60%;
+    position: absolute;
+    top: -12%; 
+    left: 20%;
+    border-radius: 20px;
 }
   
-  /* Add Animation */
+/*-----Add-Animation-----*/
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
@@ -743,7 +749,9 @@ embed{
     .crtxt, .sltxt, .rmtxt, .bltxt{font-size: 25px;}
     .hgtxt{font-size: 23px;}
     .bihtxt, .mdtxt{font-size: 20px;}
-    
+    .modal-body{padding: 20px;}
+    .modal-content1{top: 15%;}
+    iframe{display: none;}
 }
 @media only screen and (max-width: 321px) {
     .r {flex-wrap: wrap;}
@@ -768,4 +776,5 @@ embed{
         border-radius: 0px 0px 10px 10px;
         top: 82%;
     }
+    .modal-content1{top: 10%;}
 }
