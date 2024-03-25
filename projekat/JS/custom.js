@@ -17,6 +17,12 @@ function hover3() {
 function unhover3() {
   document.getElementById("mini3").src = "/images/home/info.png";
 }
+document.getElementById("maxi1").addEventListener("mouseover", hover1);
+document.getElementById("maxi1").addEventListener("mouseout", unhover1);
+document.getElementById("maxi2").addEventListener("mouseover", hover2);
+document.getElementById("maxi2").addEventListener("mouseout", unhover2);
+document.getElementById("maxi3").addEventListener("mouseover", hover3);
+document.getElementById("maxi3").addEventListener("mouseout", unhover3);
 
 window.onscroll = function () {
   scrollFunction();
