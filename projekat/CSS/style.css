@@ -491,12 +491,20 @@ ul {
 	}
 }
 /*---------Sound--------*/
-embed{
+#zvuk,#himna{
     padding: 0px 5px 5px 5px;
-    background-color: #000000;
-    border-radius: 100px;
     position:absolute;
+    background-color:black;
+    border-radius: 30px;
+    padding-top: 5px;
+}
+#zvuk{
+    width: 20%;
     right: 5%;
+}
+#himna {
+    left: 2%;
+    bottom: 3%; 
 }
 
 /*----------Chart----------*/
@@ -615,7 +623,6 @@ embed{
     right: -10%;
     bottom: 10%;
 }
-
 /*------Modals------*/
 .modal{
     display: none;
@@ -661,7 +668,7 @@ iframe{
   
   /*-----Modal-Body-------*/
 .modal-body {
-    padding: 2px 16px 100px 16px;
+    padding: 2px 16px 60px 16px;
     background-color: #fbcc01;
     color: black;
     font-size: 20px;
