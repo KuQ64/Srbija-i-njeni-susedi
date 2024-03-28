@@ -29,7 +29,7 @@ nav{
     display: flex;
 }
 header{
-    background-image:url(/images/home/pozadina.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/images/home/pozadina.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     height: 21%;
@@ -53,8 +53,8 @@ h1{
 .top{
     position: relative;
     top:15%;
-    background-color: rgba(0, 0, 0, 0.3);
     padding: 5% 0;
+
 }
 .pocrni{
     background-color: #000000;
@@ -691,14 +691,11 @@ iframe{
 
 
 /*------Responsive------*/
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 1250px) {
     .r {flex-wrap: wrap;}
-    h1 { font-size: 8vw;right: 20vw;}
-    .link, .link1 { font-size: 3vw;padding: 1vw;}
-    header {padding: 0;height: 10%;}
+    h1 { font-size: 5vw;}
     .u{top:1%}
     .card{height: 300px;width: 300px;}
-    .malo {width: 3vw;height: 3vw;}
     .crno{height: 10%;top: 90%;}
     .sr1{height: 300px;width: 300px;}
     .animacija,.animacija1,.animacija2{
@@ -753,7 +750,7 @@ iframe{
     .modal-content1{top: 15%;}
     iframe{display: none;}
 }
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 600px) {
     .r {flex-wrap: wrap;}
     h1 { font-size: 6vw;right: 20vw;}
     ::-webkit-scrollbar{width: 0;}
