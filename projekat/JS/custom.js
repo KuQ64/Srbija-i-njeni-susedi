@@ -44,27 +44,29 @@ function scrollFunction() {
 }
 
 /* ---------- MODALS ---------- */
-function setupModal(divId, modalId, closeClass) 
+function setupModal(divId, modalId, closeClass, himnaId) 
 {
   var modal = document.getElementById(modalId);
   var div = document.getElementById(divId);
   var span = document.getElementsByClassName(closeClass)[0];
+  var audio = document.getElementById(himnaId);
 
   div.onclick = function () {
     modal.style.display = "block";
   };
   span.onclick = function () {
     modal.style.display = "none";
+    audio.pause();
   };
 }
-setupModal("srbDiv", "myModal", "close");
-setupModal("mnDiv", "myModal2", "close2");
-setupModal("grDiv", "myModal3", "close3");
-setupModal("crDiv", "myModal4", "close4");
-setupModal("bihDiv", "myModal5", "close5");
-setupModal("slDiv", "myModal6", "close6");
-setupModal("hgDiv", "myModal7", "close7");
-setupModal("rmDiv", "myModal8", "close8");
-setupModal("blDiv", "myModal9", "close9");
-setupModal("alDiv", "myModal10", "close10");
-setupModal("mdDiv", "myModal11", "close11");
+setupModal("srbDiv", "myModal", "close", "himna1");
+setupModal("mnDiv", "myModal2", "close2", "himna2");
+setupModal("grDiv", "myModal3", "close3", "himna3");
+setupModal("crDiv", "myModal4", "close4", "himna4");
+setupModal("bihDiv", "myModal5", "close5", "himna5");
+setupModal("slDiv", "myModal6", "close6", "himna6");
+setupModal("hgDiv", "myModal7", "close7", "himna7");
+setupModal("rmDiv", "myModal8", "close8", "himna8");
+setupModal("blDiv", "myModal9", "close9", "himna9");
+setupModal("alDiv", "myModal10", "close10", "himna10");
+setupModal("mdDiv", "myModal11", "close11", "himna11");
