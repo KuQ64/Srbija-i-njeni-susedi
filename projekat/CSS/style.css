@@ -491,7 +491,7 @@ ul {
 	}
 }
 /*---------Sound--------*/
-#zvuk,#himna{
+#zvuk,.himna{
     padding: 0px 5px 5px 5px;
     position:absolute;
     background-color:black;
@@ -502,7 +502,7 @@ ul {
     width: 20%;
     right: 5%;
 }
-#himna {
+.himna {
     left: 2%;
     bottom: 3%; 
 }
@@ -678,7 +678,7 @@ iframe{
     font-weight: bold;
 }
   /*-----Modal-Content------*/
-  .modal-content1 {
+.modal-content1 {
     background-color: #fbcc01;
     margin: 15% auto;
     padding: 1px;
