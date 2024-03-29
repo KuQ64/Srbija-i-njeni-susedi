@@ -1,6 +1,5 @@
 body.home{
     height: 4000px;
-    background-image: url(/images/about/p1.jpg);
 }
 body.about{
     height: 1000px;
@@ -678,7 +677,7 @@ iframe{
     font-weight: bold;
 }
   /*-----Modal-Content------*/
-.modal-content1 {
+  .modal-content1 {
     background-color: #fbcc01;
     margin: 15% auto;
     padding: 1px;
@@ -706,7 +705,9 @@ iframe{
     width: 30%;
     margin: 10%;
 }
-
+.slike12{
+    gap: 10px;
+}
 /*------Responsive------*/
 @media only screen and (max-width: 1250px) {
     .r {flex-wrap: wrap;}
@@ -733,8 +734,9 @@ iframe{
         border-radius: 0px 0px 10px 10px;
         top: 83.5%;
     }
-    embed{display: none;}
-    .razmak{flex-wrap: wrap;}
+    #zvuk{display: none;}
+    #himna{bottom: 2%;width: 92%;}
+    .razmak,.slike12{flex-wrap: wrap;}
     .and{display: none;}
     .kontejner-slike{
         margin: 10% 0;
@@ -763,12 +765,18 @@ iframe{
     .crtxt, .sltxt, .rmtxt, .bltxt{font-size: 25px;}
     .hgtxt{font-size: 23px;}
     .bihtxt, .mdtxt{font-size: 20px;}
-    .modal-body{padding: 20px;}
+    .modal-body{padding: 0px 20px 50px 20px;}
     .modal-content1{top: 15%;}
     iframe{display: none;}
+    body.uput{
+        height: 800px;
+    }
+    .uputstvo1{
+        width: 70%;
+    }
 }
 @media only screen and (max-width: 600px) {
-    .r {flex-wrap: wrap;}
+    .r ,.slike12{flex-wrap: wrap;}
     h1 { font-size: 6vw;right: 20vw;}
     ::-webkit-scrollbar{width: 0;}
     .link, .link1 { font-size: 3vw;padding: 1vw 0.5vw;}
