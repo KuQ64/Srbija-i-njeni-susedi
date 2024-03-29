@@ -735,7 +735,7 @@ iframe{
         top: 83.5%;
     }
     #zvuk{display: none;}
-    #himna{bottom: 2%;width: 92%;}
+    .himna{bottom: 2%;width: 92%;}
     .razmak,.slike12{flex-wrap: wrap;}
     .and{display: none;}
     .kontejner-slike{
