@@ -689,11 +689,6 @@ iframe{
     border-radius: 20px;
 }
   
-/*-----Add-Animation-----*/
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
 /*-----Uputstvo-----*/
 .uputstvo{
     height: 20%;
